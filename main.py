@@ -5,7 +5,12 @@
 
 import csv
 
+TEMP_COL = 1
+
 with open("weather_data.csv") as data_file:
     data = csv.reader(data_file)
+    temperatures = []
+    next(data)
     for row in data:
-        print(row)
+        temperatures.append(int(row[TEMP_COL]))
+    print(temperatures)
