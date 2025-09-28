@@ -19,4 +19,5 @@
 import pandas
 
 data = pandas.read_csv("weather_data.csv")
-print(data)
+temperatures = data["temp"]
+print(temperatures)
