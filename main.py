@@ -28,4 +28,8 @@ data_dict = data.to_dict()
 
 temps_list = temperatures.to_list()
 
-print(data["temp"].mean())
+#print(data["temp"].max())
+
+#get data in columns
+print(data["condition"])
+print(data.condition)
